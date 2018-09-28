@@ -1,0 +1,83 @@
+package bin;
+import java.util.*;
+class Students
+{
+	private String name;
+	private int age;
+public Students(String nam)
+{
+	this.name = nam;
+}
+public String getName()
+{
+	return name;
+}
+public void setName(String name)
+{
+    this.name = name;
+}
+}
+public class SortingArrayOfObjects {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		Students s [][] = new Students[2][5];
+		Students s1[][] = new Students[2][5];
+		Students s2[][] = new Students[2][5];
+		for(int i=0;i<1;i++)
+		{
+			for(int j=0;j<5;j++)
+			{
+				String name = in.next();
+				s[i][j]=new Students(name);
+			}
+		}
+		for(int x=0;x<2;x++)
+		{
+		for(int i=0;i<4;i++)
+		{
+			for(int j=i+1;j<5;j++)
+			{
+                if(s[x][i].getName().compareTo(s[x][j].getName())>0)
+				{
+					s1[x][i] = s[x][i];
+					s[x][i] = s[x][j];
+					s[x][j] = s1[x][i];
+				}
+			}
+		}
+		}
+		System.out.println("Ascending Order");
+		for(int i=0;i<2;i++)
+		{
+			for(int j=0;j<5;j++)
+			{
+				System.out.print(s[i][j].getName()+" ");
+			}
+		}
+		for(int x=0;x<2;x++)
+		{
+		for(int i=0;i<4;i++)
+		{
+			for(int j=i+1;j<5;j++)
+			{
+                if(s[x][i].getName().compareTo(s[x][j].getName())<0)
+				{
+					s2[x][i] = s[x][i];
+					s[x][i] = s[x][j];
+					s[x][j] = s2[x][i];
+				}
+			}
+		}
+		}
+		System.out.println("Ascending Order");
+		for(int i=0;i<2;i++)
+		{
+			for(int j=0;j<5;j++)
+			{
+				System.out.print(s[i][j].getName()+" ");
+			}
+		}
+		
+		
+	}
+}

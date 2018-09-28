@@ -1,0 +1,5 @@
+C:\Users\M1047256\source\repos\Dictionary\Student\bin\Debug\Student.dll
+C:\Users\M1047256\source\repos\Dictionary\Student\bin\Debug\Student.pdb
+C:\Users\M1047256\source\repos\Dictionary\Student\obj\Debug\StudentEntity.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\Dictionary\Student\obj\Debug\Student.dll
+C:\Users\M1047256\source\repos\Dictionary\Student\obj\Debug\Student.pdb

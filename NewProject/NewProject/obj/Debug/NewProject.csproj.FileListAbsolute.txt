@@ -1,0 +1,12 @@
+C:\Users\M1047256\source\repos\NewProject\NewProject\bin\NewProject.dll.config
+C:\Users\M1047256\source\repos\NewProject\NewProject\bin\NewProject.dll
+C:\Users\M1047256\source\repos\NewProject\NewProject\bin\NewProject.pdb
+C:\Users\M1047256\source\repos\NewProject\NewProject\bin\Business.dll
+C:\Users\M1047256\source\repos\NewProject\NewProject\bin\Database.dll
+C:\Users\M1047256\source\repos\NewProject\NewProject\bin\Business.pdb
+C:\Users\M1047256\source\repos\NewProject\NewProject\bin\Database.pdb
+C:\Users\M1047256\source\repos\NewProject\NewProject\obj\Debug\NewProject.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\NewProject\NewProject\obj\Debug\NewProject.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\NewProject\NewProject\obj\Debug\NewProject.csproj.CopyComplete
+C:\Users\M1047256\source\repos\NewProject\NewProject\obj\Debug\NewProject.dll
+C:\Users\M1047256\source\repos\NewProject\NewProject\obj\Debug\NewProject.pdb

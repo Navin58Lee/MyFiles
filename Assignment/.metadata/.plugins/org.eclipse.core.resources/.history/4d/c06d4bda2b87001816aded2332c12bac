@@ -1,0 +1,24 @@
+package ExceptionHandlingNew;
+import java.util.*;
+public class Solution {
+	Scanner in = new Scanner(System.in);
+	public void division()
+	{
+		System.out.println("Enter the values of a and b");
+	    try
+	    {
+	    	int a = in.nextInt();
+	    	int b = in.nextInt();
+	    	int c = a/b;
+	    	System.out.println(c);
+	    }
+	    catch(ArithmeticException ae)
+	    {
+	    	System.out.println("Number cannot be divided by zero");
+	    }
+	    catch(InputMismatchException ime)
+	    {
+	    	System.out.println("Enter a valid number");
+	    }
+	}
+}

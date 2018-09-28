@@ -1,0 +1,14 @@
+﻿@model IEnumerable<EmployeeDetailsDemo.Models.Department>
+    @foreach (var x in Model)
+    {
+<div>
+    @x.DepartmentName
+    <br />
+    @foreach (var y in x.EmployeeDetails)
+    {
+        @y.Employee_ID 
+        @y.EmployeeName
+        <br />
+    }
+</div>
+    }

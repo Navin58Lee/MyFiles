@@ -1,0 +1,15 @@
+<button type="button" class="btn btn-secondary" name="submit" (click)="hello()">Booking History</button>
+<table>
+    <body>
+        <tr *ngFor="let data of historynew">
+            <b>Hotel:</b><br>
+            <td>{{data.hotelName}}</td>
+            <b>CheckInDate:</b>
+            <td>{{data.checkInDate}}</td>
+            <b>CheckOutDate:</b>
+            <td>{{data.checkOutDate}}</td>
+            <b>BookingDate:</b>
+            <td>{{data.bookingDate}}</td>
+        </tr>
+    </body>
+</table>

@@ -1,0 +1,15 @@
+<form name="example-form" #exForm="ngForm" (ngSubmit) = "submitForm(exForm)">
+ Name: &nbsp; <input type="text" name="Name"  #Name="ngModel" [(ngModel)]="exampleObj.name">
+ Location: &nbsp; <input type="text" name="Location"  #Location="ngModel" [(ngModel)]="exampleObj.location">
+ <button type="submit" value="Submit"> Submit</button>
+ <button type="button" value="show" (click)="onShow()">Show</button><br>
+ <select name="dropdown">
+    <option *ngFor="let y of somethingElse" [value]="y.name">{{y.name}}</option>
+  </select>
+</form>
+<div *ngIf="buttonClick==true">
+<div *ngFor="let x of somethingElse">
+  {{x.name}} &nbsp;
+  {{x.location}}<br>
+</div>  
+</div>

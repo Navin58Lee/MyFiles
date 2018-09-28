@@ -1,0 +1,80 @@
+<!-- <form class="user-form" #userForm="ngForm" (ngSubmit)="OnSubmit(userForm)">
+  <input type="hidden" name="Hotel_Id" #HotelId="ngModel" [(ngModel)]="hotelService.selectedHotel.Hotel_Id">
+  <div class="form-row">
+      <div class="form-group col-md-6">
+          <input class="form-control" name="Hotel_Name" #Hotelname="ngModel" [(ngModel)]="hotelService.selectedHotel.Hotelname" placeholder="Hotel Name"
+              required>
+          <div class="validationerror" *ngIf="Hotelname.invalid && Hotelname.touched"> This field is required</div>
+      </div>
+      <div class="form-group col-md-6">
+          <input class="form-control" name="City" #City="ngModel" [(ngModel)]="hotelService.selectedHotel.City" placeholder="City"
+              required>
+          <div class="validationerror" *ngIf="City.invalid && City.touched"> This field is required</div>
+      </div>
+  </div> -->
+<!-- <div class="form-group">
+      <input class="form-control" name="Password" #Password="ngModel" [(ngModel)]="userService.selectedUser.Password" placeholder="Password">
+  </div>
+  <div class="form-group">
+      <input class="form-control" name="Gender" #Gender="ngModel" [(ngModel)]="userService.selectedUser.Gender" placeholder="Gender">
+  </div>
+  <div class="form-group">
+      <input class="form-control" name="Email" #Email="ngModel" [(ngModel)]="userService.selectedUser.Email" placeholder="Email">
+  </div>
+  <div class="form-group">
+      <input class="form-control" name="Mobile" #Mobile="ngModel" [(ngModel)]="userService.selectedUser.Mobile" placeholder="Mobile">
+  </div> -->
+<!-- <div class="form-row">
+      <div class="form-group col-md-8">
+          <button [disabled]="!userForm.valid" type="submit" class="btn btn-lg btn-block btn-info">Submit</button>
+      </div>
+      <div class="form-group col-md-4">
+          <button type="button" class="btn btn-lg btn-block btn-secondary" (click)="resetForm(userForm)">Reset</button>
+      </div>
+  </div>
+</form> -->
+<div class="form-row">
+<div class="form-group col-md-2">
+    <h6 style="color: orange">Room Type</h6>
+        <select name="a" class="x" #roomtype="ngModel" [(ngModel)]="hotel.Room_Type">
+            <option selected value="Normal AC">Normal AC</option>
+            <option value="Normal Non AC">Normal Non AC</option>
+            <option value="Deluxe AC">Deluxe AC</option>
+            <option value="Deluxe Non AC">Deluxe Non AC</option>
+        </select>
+</div>
+
+<div class="form-group col-md-2">
+    <h6 style="color: orange">City</h6>
+    <select name="b" class="y" #city="ngModel" [(ngModel)]="hotel.City_Name">
+            <option value="Chennai">Chennai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bhubaneswar">Bhubaneswar</option>
+        </select>
+</div>
+
+<div class="form-group col-md-2">
+    <label for="Check_In" style="color: orange; font-weight: bold" >Check_In</label><br>
+    <input id="checkin" class="checkin" name="checkin" #checkin="ngModel" [(ngModel)]="hotel.Check_In" type="date">
+</div>
+
+<div class="form-group col-md-2">
+    <label for="Check_Out" style="color: orange; font-weight: bold" >Check_Out</label><br>
+    <input id="checkout" class="checkout" name="checkout" #checkin="ngModel" [(ngModel)]="hotel.Check_Out" type="date">
+</div>
+</div>
+<div class="form-group col-md-6">
+<button type="button" class="btn btn-secondary" name="submit" (click)="show()">Go!</button>
+</div>
+<table>
+    <body>
+        <tr *ngFor="let data of searchData">
+            <b>Hotel:</b><br><td>{{data.Hotel_Name}}</td>
+            <b>City:</b><br><td>{{data.City}}</td>
+            <b>Price:</b><br><td>{{data.Price}}<p>/night</p></td>
+        </tr>
+    </body>
+    <!-- <tr>{{errormsg}}</tr> -->
+</table>

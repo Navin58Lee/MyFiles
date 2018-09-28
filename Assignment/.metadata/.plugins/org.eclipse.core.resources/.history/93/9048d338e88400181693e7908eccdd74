@@ -1,0 +1,10 @@
+package TheDuel;
+import java.util.*;
+public class main {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		int p [] = new int[n];
+        System.out.println(Solution.minPower(p));
+	}
+}

@@ -1,0 +1,35 @@
+#searchf{
+background-color: rgba(5, 5, 22, 0.56);
+padding:90px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height:auto;
+color: white;
+
+}
+
+#amen{
+    float:right;
+   
+}
+#text-icons
+{
+    font-size: 10px;   
+    font:bolder;
+    float:right;
+}
+.head
+{
+    padding-top: 20px;
+}
+#bottom-nav
+{
+    color: white;
+}
+/* option.bold {
+    font-weight:bold;
+} */
+#drop
+{
+    font-weight:bolder;
+}

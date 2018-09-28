@@ -1,0 +1,11 @@
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\bin\Debug\netcoreapp2.0\MediumTwo.deps.json
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\bin\Debug\netcoreapp2.0\MediumTwo.runtimeconfig.json
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\bin\Debug\netcoreapp2.0\MediumTwo.runtimeconfig.dev.json
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\bin\Debug\netcoreapp2.0\MediumTwo.dll
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\bin\Debug\netcoreapp2.0\MediumTwo.pdb
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\obj\Debug\netcoreapp2.0\MediumTwo.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\obj\Debug\netcoreapp2.0\MediumTwo.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\obj\Debug\netcoreapp2.0\MediumTwo.AssemblyInfoInputs.cache
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\obj\Debug\netcoreapp2.0\MediumTwo.AssemblyInfo.cs
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\obj\Debug\netcoreapp2.0\MediumTwo.dll
+C:\Users\M1047256\source\repos\MediumTwo\MediumTwo\obj\Debug\netcoreapp2.0\MediumTwo.pdb

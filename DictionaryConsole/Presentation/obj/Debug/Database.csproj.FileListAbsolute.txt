@@ -1,0 +1,8 @@
+C:\Users\M1047256\source\repos\DictionaryConsole\Presentation\bin\Debug\Presentation.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\Presentation\bin\Debug\Presentation.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\Presentation\bin\Debug\StudentEntity.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\Presentation\bin\Debug\StudentEntity.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\Presentation\obj\Debug\Database.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\DictionaryConsole\Presentation\obj\Debug\Database.csproj.CopyComplete
+C:\Users\M1047256\source\repos\DictionaryConsole\Presentation\obj\Debug\Presentation.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\Presentation\obj\Debug\Presentation.pdb

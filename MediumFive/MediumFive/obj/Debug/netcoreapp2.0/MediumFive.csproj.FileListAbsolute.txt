@@ -1,0 +1,10 @@
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\bin\Debug\netcoreapp2.0\MediumFive.deps.json
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\bin\Debug\netcoreapp2.0\MediumFive.runtimeconfig.json
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\bin\Debug\netcoreapp2.0\MediumFive.runtimeconfig.dev.json
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\bin\Debug\netcoreapp2.0\MediumFive.dll
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\bin\Debug\netcoreapp2.0\MediumFive.pdb
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\obj\Debug\netcoreapp2.0\MediumFive.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\obj\Debug\netcoreapp2.0\MediumFive.AssemblyInfoInputs.cache
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\obj\Debug\netcoreapp2.0\MediumFive.AssemblyInfo.cs
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\obj\Debug\netcoreapp2.0\MediumFive.dll
+C:\Users\M1047256\source\repos\MediumFive\MediumFive\obj\Debug\netcoreapp2.0\MediumFive.pdb

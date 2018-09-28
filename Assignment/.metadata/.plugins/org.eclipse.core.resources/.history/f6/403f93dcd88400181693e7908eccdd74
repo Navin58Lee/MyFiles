@@ -1,0 +1,40 @@
+package FinalDiscountedPrice;
+public class Solution {
+	static void finalPrice(int [] prices)
+	{
+		int len = prices.length;
+		int temp = 0;
+		int sum = 0;
+		int min = 0;
+		for(int i=0;i<len;i++)
+		{
+			for(int j=i+1;j<len-1;j++)
+			{
+				for(int k=j+1;k<len;k++)
+				{
+					if(prices[j]>prices[k])
+					{
+						temp = prices[j];
+						prices[j] = prices[k];
+						prices[k] = temp;
+					}
+				}
+			}
+				min = prices[i+1];
+				System.out.println(min);
+			if(prices[i]>min)
+			{
+				sum = sum+(prices[i]-min);
+			}
+			if(prices[i] == min)
+			{
+				sum = sum+0;
+			}
+			if(prices[i]<min)
+			{
+				sum = sum+prices[i];
+			}
+		}
+		System.out.println(sum);
+	}
+}

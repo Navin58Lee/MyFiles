@@ -1,0 +1,2 @@
+C:\Users\M1047256\source\repos\Dictionary\Dictionary\obj\Debug\Dicitonary.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\Dictionary\Dictionary\obj\Debug\Dicitonary.csproj.CoreCompileInputs.cache

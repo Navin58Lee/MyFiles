@@ -1,0 +1,6 @@
+C:\Users\M1047256\source\repos\DictionaryConsole\StudentEntity\bin\Debug\StudentEntity.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\StudentEntity\bin\Debug\StudentEntity.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\StudentEntity\obj\Debug\StudentEntity.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\DictionaryConsole\StudentEntity\obj\Debug\StudentEntity.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\DictionaryConsole\StudentEntity\obj\Debug\StudentEntity.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\StudentEntity\obj\Debug\StudentEntity.pdb

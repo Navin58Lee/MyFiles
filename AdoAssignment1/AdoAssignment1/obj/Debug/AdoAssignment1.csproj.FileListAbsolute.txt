@@ -1,0 +1,6 @@
+C:\Users\M1047256\source\repos\AdoAssignment1\AdoAssignment1\bin\Debug\AdoAssignment1.exe
+C:\Users\M1047256\source\repos\AdoAssignment1\AdoAssignment1\bin\Debug\AdoAssignment1.pdb
+C:\Users\M1047256\source\repos\AdoAssignment1\AdoAssignment1\obj\Debug\AdoAssignment1.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\AdoAssignment1\AdoAssignment1\obj\Debug\AdoAssignment1.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\AdoAssignment1\AdoAssignment1\obj\Debug\AdoAssignment1.exe
+C:\Users\M1047256\source\repos\AdoAssignment1\AdoAssignment1\obj\Debug\AdoAssignment1.pdb

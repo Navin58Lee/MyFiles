@@ -1,0 +1,9 @@
+
+.breadcrumb{
+    background-color: lightblue;
+}
+@media only screen and (max-width: 600px) {
+    .breadcrumb {
+        background-color: black;
+    }
+}

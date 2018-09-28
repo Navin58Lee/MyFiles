@@ -1,0 +1,31 @@
+
+<div class="b">
+  <input type="text" disabled class="a" style="width: 20%" name="feedback_form" value="Feedback Form">
+  <br><br> Name <input type="text" #textbox1 [(ngModel)]="name" name="Name">
+  <br><br> MID <input type="text" #textbox2 [(ngModel)]="mid" name="mid">
+  <br><br>
+</div>
+<div class ="c">
+   <p class="p">Feedback</p> <textarea #textarea [(ngModel)]="feedback" rows="5" cols="50">
+    </textarea>
+    <br><br>
+    </div>
+    <div class="clear">
+        <button (click)="onClear()" style="background:yellow">Clear</button> 
+    &nbsp;
+    <button (click)="onPost()" style="background:lightblue">Post</button> 
+    </div>
+    <hr style="border:dotted 1px"/>
+    <div class="fb">
+    <input type="text" disabled value="Feedbacks" style="background : lightgreen">
+    </div>
+    <app-formschild [details]="array"></app-formschild>
+    <!-- <div *ngFor="let a of array ">
+      <div class="nm">
+   Name : {{a.Name}} &nbsp; MID : {{a.Mid}} &nbsp;{{objDate|date:'short'}}<br>
+      </div>
+      <div class="feed">
+   Feedback : {{a.Feedback}}
+      </div>
+    </div> -->
+    

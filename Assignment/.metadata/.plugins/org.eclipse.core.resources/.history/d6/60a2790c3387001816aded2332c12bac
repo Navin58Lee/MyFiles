@@ -1,0 +1,16 @@
+package ExceptionHandlingNew;
+import java.util.*;
+public class main {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		Solution s = new Solution();
+		try{
+			s.inputMismatch();
+			s.array();
+			s.numberFormat();
+			s.division();
+		}catch(Exception e){
+			Exception occured in main
+		}
+	}
+}

@@ -1,0 +1,524 @@
+<!-- met card meeting -->
+<ng-container [ngSwitch]="result.RoomType">
+
+  <!-- meeting room -->
+  <div *ngSwitchCase="'Meeting'">
+    <div class="container" style="background-color:rgb(201, 201, 201);min-width:100%;padding:0">
+      <mat-card class="card" style="min-height:600px;margin:20px 20px 40px;padding:15px">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="container" style=" width:100%;margin:0;padding:0; height:350px;">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+
+                    <img src="./assets/confirm-booking-images/meeting/meeting1.jpg" alt="conference1" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/meeting/meeting2.jpg" alt="conference2" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/meeting/meeting3.jpg" alt="conference3" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/meeting/meeting4.jpg" alt="conference4" style="min-width: 100%;
+                  height:350px;
+                  max-width: none;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Carousal -->
+          <div class="col-sm-4">
+            <div style="background-color:rgb(226, 224, 224);padding:5px;min-height:350px">
+              <p style="font-size:20px;text-align:center;padding:10px;margin:0">
+                <b>MEETING ROOM</b>
+              </p>
+              <p style="font-size:15px;padding:10px 15px 10px">
+                <!-- {{datapass[0].UserName}} -->
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-in:</label>{{result.FromDate}}
+                <br>
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-out:</label>{{result.ToDate}}
+                <br>
+                <br>
+                <label>Number of Rooms:</label>{{result.NoOfAvailableRoom}}<br>
+                <label>Book Room:</label>
+                <input type="number" min="1" max="20" step="1" value=1 style="font-size:15px;height:20px;text-align:center" />
+                <br>
+                <br>
+                <label>Price:</label>{{result.Roomprice}}
+                <br>
+                <!-- <label>Total Price:</label>
+                <br> -->
+              </p>
+              <div style="text-align:center;padding:20px">
+                <button mat-raised-button color="warn" (click)="confirmBooking()">Confirm Booking</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+
+          <b>
+            <u>Ameni</u>ties</b>
+
+        </div>
+        <div class="row" style="padding:5px 20px 10px">
+
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal"></span> Wi-Fi
+            <br>
+            <span class="glyphicon glyphicon-facetime-video"></span> Multimedia Equipment
+            <br>
+            <span class="glyphicon glyphicon-briefcase"></span> Full-Service Business Center</div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-credit-card"></span> AC
+            <br>
+            <span class="glyphicon glyphicon-road"></span> Parking
+            <br>
+            <span class="glyphicon glyphicon-cutlery"></span> In-house Restaurant and Mini-Bar</div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+          <b>
+            <u>Descri</u>ption</b>
+        </div>
+        <div style="padding:10px 30px 0px;font-size:15px">
+          Find convenient, professional space to meet wherever you need. Near the station, near your client, somewhere central for
+          regional staff all available on-demand and by the hour.
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <!-- mat card meeting -->
+
+  <!-- mat card conference -->
+  <div *ngSwitchCase="'Conference'">
+    <div class="container" style="background-color:rgb(201, 201, 201);min-width:100%;padding:0">
+      <mat-card class="card" style="min-height:600px;margin:20px 20px 40px;padding:15px">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="container" style=" width:100%;margin:0;padding:0; height:350px;">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+
+                    <img src="./assets/confirm-booking-images/conference/conference1.jpg" alt="conference1" style="min-width: 100%;
+                height: 350px;
+                max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/conference/conference2.jpg" alt="conference2" style="min-width: 100%;
+                height: 350px;
+                max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/conference/conference3.jpg" alt="conference3" style="min-width: 100%;
+                height: 350px;
+                max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/conference/conference4.jpg" alt="conference4" style="min-width: 100%;
+                height:350px;
+                max-width: none;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Carousal -->
+          <div class="col-sm-4">
+            <div style="background-color:rgb(226, 224, 224);padding:5px;min-height:350px">
+              <p style="font-size:20px;text-align:center;padding:10px;margin:0">
+                <b>CONFRENCE ROOM</b>
+              </p>
+              <p style="font-size:15px;padding:10px 15px 10px">
+                <!-- {{datapass[0].UserName}} -->
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-in:</label>{{result.FromDate}}
+                <br>
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-out:</label>{{result.ToDate}}
+                <br>
+                <br>
+                <label>Number of Rooms:</label>{{result.NoOfAvailableRoom}}<br>
+                <label>Book Room:</label>
+                <input type="number" min="1" max="20" step="1" style="font-size:15px;height:20px;text-align:center" />
+                <br>
+                <br>
+                <label>Price:</label>{{result.Roomprice}}
+                <br>
+                <!-- <label>Total Price:</label>
+                <br> -->
+              </p>
+              <div style="text-align:center;padding:20px">
+                <button mat-raised-button color="warn" (click)="confirmBooking()">Confirm Booking</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+
+          <b>
+            <u>Ameni</u>ties</b>
+
+        </div>
+        <div class="row" style="padding:5px 20px 10px">
+
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal"></span> Wi-Fi
+            <br>
+            <span class="glyphicon glyphicon-facetime-video"></span> Multimedia Equipment
+            <br>
+            <span class="glyphicon glyphicon-briefcase"></span> Full-Service Business Center</div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-credit-card"></span> AC
+            <br>
+            <span class="glyphicon glyphicon-road"></span> Parking
+            <br>
+            <span class="glyphicon glyphicon-cutlery"></span> In-house Restaurant and Mini-Bar</div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+          <b>
+            <u>Descri</u>ption</b>
+        </div>
+        <div style="padding:10px 30px 0px;font-size:15px">
+          Equipped with latest technologies including Wi-Fi, air-conditioning and audio-visual equipment, Sanctuary Conference Hall
+          is an ideal place to host medium-sized meetings and conferences.
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <!-- mat card conference -->
+
+  <!-- mat card auditorium -->
+  <div *ngSwitchCase="'Auditorium'">
+    <div class="container" style="background-color:rgb(201, 201, 201);min-width:100%;padding:0">
+      <mat-card class="card" style="min-height:600px;margin:20px 20px 40px;padding:15px">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="container" style=" width:100%;margin:0;padding:0; height:350px;">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+
+                    <img src="./assets/confirm-booking-images/auditorium/auditorium1.jpg" alt="conference1" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/auditorium/auditorium2.jpg" alt="conference2" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/auditorium/auditorium3.jpg" alt="conference3" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/auditorium/auditorium4.jpg" alt="conference4" style="min-width: 100%;
+                  height:350px;
+                  max-width: none;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Carousal -->
+          <div class="col-sm-4">
+            <div style="background-color:rgb(226, 224, 224);padding:5px;min-height:350px">
+              <p style="font-size:20px;text-align:center;padding:10px;margin:0">
+                <b>AUDITORIUM</b>
+              </p>
+              <p style="font-size:15px;padding:10px 15px 10px">
+                <!-- {{datapass[0].UserName}} -->
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-in:</label>{{result.FromDate}}
+                <br>
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-out:</label>{{result.ToDate}}
+                <br>
+                <br>
+                <label>Number of Rooms:</label>{{result.NoOfAvailableRoom}}<br>
+                <label>Book Room:</label>
+                <input type="number" min="1" max="20" step="1" style="font-size:15px;height:20px;text-align:center" />
+                <br>
+                <br>
+                <label>Price:</label>{{result.Roomprice}}
+                <br>
+                <!-- <label>Total Price:</label>
+                <br> -->
+              </p>
+              <div style="text-align:center;padding:20px">
+                <button mat-raised-button color="warn" (click)="confirmBooking()">Confirm Booking</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+
+          <b>
+            <u>Ameni</u>ties</b>
+
+        </div>
+        <div class="row" style="padding:5px 20px 10px">
+
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal"></span> Wi-Fi
+            <br>
+            <span class="glyphicon glyphicon-facetime-video"></span> Multimedia Equipment
+            <br>
+            <span class="glyphicon glyphicon-briefcase"></span> Full-Service Business Center</div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-credit-card"></span> AC
+            <br>
+            <span class="glyphicon glyphicon-road"></span> Parking
+            <br>
+            <span class="glyphicon glyphicon-cutlery"></span> In-house Restaurant and Mini-Bar</div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+          <b>
+            <u>Descri</u>ption</b>
+        </div>
+        <div style="padding:10px 30px 0px;font-size:15px">
+          Sanctuary provides excellent ambience for national and international level conferences and seminars Its Central Convention
+          Centre Complex houses a world-class Auditorium, all available on-demand and by the hour.
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <!-- mat card auditorium -->
+
+  <!-- mad card accomodation room -->
+  <div *ngSwitchCase="'Accomodation'">
+    <div class="container" style="background-color:rgb(201, 201, 201);min-width:100%;padding:0">
+      <mat-card class="card" style="min-height:600px;margin:20px 20px 40px;padding:15px">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="container" style=" width:100%;margin:0;padding:0; height:350px;">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+
+                    <img src="./assets/confirm-booking-images/accomodation/accomodation1.jpg" alt="conference1" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/accomodation/accomodation2.jpg" alt="conference2" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/accomodation/accomodation3.jpg" alt="conference3" style="min-width: 100%;
+                  height: 350px;
+                  max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/accomodation/accomodation4.jpg" alt="conference4" style="min-width: 100%;
+                  height:350px;
+                  max-width: none;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Carousal -->
+          <div class="col-sm-4">
+            <div style="background-color:rgb(226, 224, 224);padding:5px;min-height:350px">
+              <p style="font-size:20px;text-align:center;padding:10px;margin:0">
+                <b>ACCOMODATION ROOM</b>
+              </p>
+              <p style="font-size:15px;padding:10px 15px 10px">
+                <!-- {{datapass[0].UserName}} -->
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-in:</label>{{result.FromDate}}
+                <br>
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-out:</label>{{result.ToDate}}
+                <br>
+                <br>
+                <label>Number of Rooms:</label>{{result.NoOfAvailableRoom}}<br>
+                <label>Book Room:</label>
+                <input type="number" min="1" max="20" step="1" style="font-size:15px;height:20px;text-align:center" />
+                <br>
+                <br>
+                <label>Price:</label>{{result.Roomprice}}
+                <br>
+                <!-- <label>Total Price:</label>
+                <br> -->
+              </p>
+              <div style="text-align:center;padding:20px">
+                <button mat-raised-button color="warn" (click)="confirmBooking()">Confirm Booking</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+
+          <b>
+            <u>Ameni</u>ties</b>
+
+        </div>
+        <div class="row" style="padding:5px 20px 10px">
+
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal"></span> Wi-Fi
+            <br>
+            <span class="glyphicon glyphicon-facetime-video"></span> Multimedia Equipment
+            <br>
+            <span class="glyphicon glyphicon-briefcase"></span> Full-Service Business Center</div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-credit-card"></span> AC
+            <br>
+            <span class="glyphicon glyphicon-road"></span> Parking
+            <br>
+            <span class="glyphicon glyphicon-cutlery"></span> In-house Restaurant and Mini-Bar</div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+          <b>
+            <u>Descri</u>ption</b>
+        </div>
+        <div style="padding:10px 30px 0px;font-size:15px">
+          Sanctuary Maratha offers a range of accommodation options that rate among the best in hotel. The six storey hotel comprises
+          380 elegantly appointed and spacious guest-rooms that strike a perfect all available on-demand.
+        </div>
+      </mat-card>
+    </div>
+  </div>
+
+  <!-- mat card accomodatiom room -->
+
+  <!-- mat card amphitheater -->
+  <div *ngSwitchCase="'Amphitheater'">
+    <div class="container" style="background-color:rgb(201, 201, 201);min-width:100%;padding:0">
+      <mat-card class="card" style="min-height:600px;margin:20px 20px 40px;padding:15px">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="container" style=" width:100%;margin:0;padding:0; height:350px;">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+
+                    <img src="./assets/confirm-booking-images/amphitheater/amphitheater1.jpg" alt="conference1" style="min-width: 100%;
+                    height: 350px;
+                    max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/amphitheater/amphitheater2.jpg" alt="conference2" style="min-width: 100%;
+                    height: 350px;
+                    max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/amphitheater/amphitheater3.jpg" alt="conference3" style="min-width: 100%;
+                    height: 350px;
+                    max-width: none;">
+                  </div>
+
+                  <div class="item">
+                    <img src="./assets/confirm-booking-images/amphitheater/amphitheater4.jpg" alt="conference4" style="min-width: 100%;
+                    height:350px;
+                    max-width: none;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Carousal -->
+          <div class="col-sm-4">
+            <div style="background-color:rgb(226, 224, 224);padding:5px;min-height:350px">
+              <p style="font-size:20px;text-align:center;padding:10px;margin:0">
+                <b>AMPHITHEATER</b>
+              </p>
+              <p style="font-size:15px;padding:10px 15px 10px">
+                <!-- {{datapass[0].UserName}} -->
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-in:</label>{{result.FromDate}}
+                <br>
+                <label>
+                  <span class="glyphicon glyphicon-calendar"></span> Check-out:</label>{{result.ToDate}}
+                <br>
+                <br>
+                <label>Number of Rooms Available:</label>{{result.NoOfAvailableRoom}}<br>
+                <label>Book Room:</label>
+                <input type="number" min="1" max="20" step="1" style="font-size:15px;height:20px;text-align:center" />
+                <br>
+                <br>
+                <label>Price:</label>{{result.Roomprice}}
+                <br>
+                <!-- <label>Total Price:</label>
+                <br> -->
+              </p>
+              <div style="text-align:center;padding:20px">
+                <button mat-raised-button color="warn" (click)="confirmBooking()">Confirm Booking</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+
+          <b>
+            <u>Ameni</u>ties</b>
+
+        </div>
+        <div class="row" style="padding:5px 20px 10px">
+
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal"></span> Wi-Fi
+            <br>
+            <span class="glyphicon glyphicon-facetime-video"></span> Multimedia Equipment
+            <br>
+            <span class="glyphicon glyphicon-briefcase"></span> Full-Service Business Center</div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-credit-card"></span> AC
+            <br>
+            <span class="glyphicon glyphicon-road"></span> Parking
+            <br>
+            <span class="glyphicon glyphicon-cutlery"></span> In-house Restaurant and Mini-Bar</div>
+        </div>
+        <div style="padding:10px 30px 0px; color:blueviolet;font-size:20px">
+          <b>
+            <u>Descri</u>ption</b>
+        </div>
+        <div style="padding:10px 30px 0px;font-size:15px">
+          Find convenient, professional space to meet wherever you need. Near the station, near your client, somewhere central for
+          regional staff all available on-demand and by the hour.
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</ng-container>
+<!-- mat card amphitheater -->

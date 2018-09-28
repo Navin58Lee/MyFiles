@@ -1,0 +1,11 @@
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\obj\Debug\netcoreapp2.0\MediumOne.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\obj\Debug\netcoreapp2.0\MediumOne.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\obj\Debug\netcoreapp2.0\MediumOne.AssemblyInfoInputs.cache
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\obj\Debug\netcoreapp2.0\MediumOne.AssemblyInfo.cs
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\bin\Debug\netcoreapp2.0\MediumOne.deps.json
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\bin\Debug\netcoreapp2.0\MediumOne.runtimeconfig.json
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\bin\Debug\netcoreapp2.0\MediumOne.runtimeconfig.dev.json
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\bin\Debug\netcoreapp2.0\MediumOne.dll
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\bin\Debug\netcoreapp2.0\MediumOne.pdb
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\obj\Debug\netcoreapp2.0\MediumOne.dll
+C:\Users\M1047256\source\repos\MediumOne\MediumOne\obj\Debug\netcoreapp2.0\MediumOne.pdb

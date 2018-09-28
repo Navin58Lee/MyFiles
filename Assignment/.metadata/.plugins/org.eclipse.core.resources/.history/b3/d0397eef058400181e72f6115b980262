@@ -1,0 +1,19 @@
+package bin;
+import java.util.*;
+public class TwoDStringArray {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+	    String [][] arr = {{"i am in bhubaneswar"},{"i was in chennai last week"}};
+	    int l1 = arr[0].length;
+	    int l2 = arr[1].length;
+	    System.out.println(l1+" "+l2);
+	    
+	    
+	    
+	    
+
+
+	}
+
+}

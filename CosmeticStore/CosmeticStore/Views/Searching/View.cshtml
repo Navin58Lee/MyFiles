@@ -1,0 +1,35 @@
+﻿@model IEnumerable<CosmeticStore.Models.Addcosmetic>
+</br></br>
+@using (Html.BeginForm("Index", "Searching", FormMethod.Get))
+{
+    @Html.TextBox("searching")<input type="submit" value="Search" />
+}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Cosmetic Name</th>
+            <th>User Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="3" style="color:red">
+                    No Match Any Document
+                </td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Company</td>
+                    <td>@item.CosmeticName</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+

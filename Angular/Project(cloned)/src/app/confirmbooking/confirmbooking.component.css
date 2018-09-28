@@ -1,0 +1,36 @@
+div.sm-jumbotron {
+    margin: 0px;
+    padding: 2rem;
+    background-color: #005B8B;
+    color : #18E215;
+    
+}
+.card{
+    width:100%;
+    height:100%;
+    background-color: white;
+}
+.card-title{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-right: 40px;
+}
+h1{
+    text-align: center;
+    color: white;
+    background-color: #2897D3;
+    padding:30px;
+
+}
+.confirm-table
+{
+    
+    align-content: center;
+    text-align: center;
+height:100%;
+width:60%;
+
+}
+.card-body{
+    padding-top:20%;
+    padding-bottom: 20%;
+}

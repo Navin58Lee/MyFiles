@@ -1,0 +1,57 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class = "col-lg-5 col-md-5 col-sm-5 col-xs-5">
+      <div class="example-container mat-elevation-z8">
+          <mat-table #table [dataSource]="dataSource">
+        
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+        
+            <!-- Position Column -->
+            <ng-container matColumnDef="BookingFromDate">
+              <mat-header-cell *matHeaderCellDef> BookingFromDate. </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.BookingFromDate | date : 'dd-MMM-yyyy'}} </mat-cell>
+            </ng-container>
+        
+            <!-- Name Column -->
+            <ng-container matColumnDef="BookingToDate">
+              <mat-header-cell *matHeaderCellDef> BookingToDate </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.BookingToDate | date : 'dd-MMM-yyyy'}} </mat-cell>
+            </ng-container>
+        
+            <!-- Weight Column -->
+            <ng-container matColumnDef="NoOfRooms">
+              <mat-header-cell *matHeaderCellDef> NoOfRooms </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.NoOfRooms}} </mat-cell>
+            </ng-container>
+        
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="LocationCity">
+              <mat-header-cell *matHeaderCellDef> Location </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.Assets.Location.LocationCity}} </mat-cell>
+            </ng-container>
+        
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="view_booking(row)"></mat-row>
+          </mat-table>
+        </div>
+  </div>
+  <div class = "col-lg-7 col-md-7 col-sm-7 col-xs-7">
+      <form class="example-form" *ngIf = "datasource2">
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="BookingFromDate" readonly [(ngModel)]="datasource2.BookingFromDate" name="BookingFromDate">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="BookingToDate" readonly [(ngModel)]="datasource2.BookingToDate" name="BookingToDate">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="NoOfRooms" readonly [(ngModel)]="datasource2.NoOfRooms" name="NoOfRooms">
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+              <input matInput placeholder="LocationCity" readonly [(ngModel)]="datasource2.Assets.Location.LocationCity" name="LocationCity">
+          </mat-form-field>
+            <button *ngIf = "datasource2.status == -1" disabled type="button" class="btn btn-info">Canceled</button>          
+            <button *ngIf = "datasource2.status == 0" type="button" class="btn btn-danger" (click)="cancel_booking(datasource2)">CancelBooking</button>          
+            <button *ngIf = "datasource2.status == 1" disabled type="button" class="btn btn-success">Completed</button>          
+        </form>
+    </div>
+</div>

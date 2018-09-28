@@ -1,0 +1,18 @@
+<button type="button" class="btn btn-secondary" name="submit" (click)="hello()">Booking History</button>
+<table style="width:100%" id="abc">
+  <body>
+    <tr *ngFor="let data of historyData">
+      <b>Hotel:</b><br>
+      <td>{{data.hotelName}}</td>
+      <b>CheckInDate:</b>
+      <td>{{data.checkInDate.split("T")[0]}}</td>
+      <b>CheckOutDate:</b>
+      <td>{{data.checkOutDate.split("T")[0]}}</td>
+      <b>BookingDate:</b>
+      <td>{{data.bookingDate.toString().split("T")[0]}}</td>
+      <td *ngIf="data.checkInDate.toString()>todayDate">
+        <button type="button" class="btn btn-secondary" name="submit" (click)="clear(data.bookingId)">Cancel Booking</button>
+      </td>
+    </tr>
+  </body>
+</table>

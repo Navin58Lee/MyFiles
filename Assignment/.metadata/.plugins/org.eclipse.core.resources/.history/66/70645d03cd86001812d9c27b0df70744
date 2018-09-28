@@ -1,0 +1,30 @@
+package bin;
+import java.util.*;
+public class Exceptions {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		//ArithmeticException
+		System.out.println("Enter the values of a and  b");
+		int a = in.nextInt();
+		int b = in.nextInt();
+		try
+		{
+			int c = a/b;
+			System.out.println(a+"/"+b+" = "+c);
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Number cannot be divided by zero");
+		}
+		//NullPointerException
+		try
+		{
+			String x = null;
+			System.out.println(x.charAt(2));
+		}
+		catch(NullPointerException r)
+		{
+			System.out.println("String is empty");
+		}
+	}
+}

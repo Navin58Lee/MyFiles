@@ -1,0 +1,22 @@
+package WholeMinuteDilemma;
+
+public class Solution {
+	  static long playlist(int[] songs) {
+      int len = songs.length;
+      int count = 0;
+      int sum = 0;
+      for(int i=0;i<len-1;i++)
+      {
+    	  sum=0;
+    	  for(int j=i+1;j<len;j++)
+    	  {
+    		  sum = songs[i]+songs[j];
+    	  }
+    	  if(sum%60==0)
+    	  {
+    		  count++;
+    	  }
+      }
+      return count;
+	  }
+}

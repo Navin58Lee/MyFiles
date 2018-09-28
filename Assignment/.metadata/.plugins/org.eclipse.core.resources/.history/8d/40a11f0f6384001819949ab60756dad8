@@ -1,0 +1,27 @@
+package bin;
+class Vehicle
+{
+	public void start()
+	{
+		System.out.println("Vehicle Started");
+	}
+}
+class Car extends Vehicle
+{
+	public void start()
+	{
+		System.out.println("Car Started");
+	}
+	public void honk()
+	{
+		System.out.println("Car Honking");
+	}
+}
+public class MainUpAndDownCast {
+	public static void main(String[] args) {
+		Vehicle vechicle1 = new Vehicle();
+	    Car car1 = new Car();
+	    Vehicle vehicle2 = car1;
+	    vehicle2.start();
+	}
+}

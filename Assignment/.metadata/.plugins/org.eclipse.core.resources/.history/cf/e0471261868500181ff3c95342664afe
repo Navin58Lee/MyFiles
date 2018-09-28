@@ -1,0 +1,23 @@
+package TheDuel;
+
+public class Solution {
+    static int minPower(int[] p) {
+    int len = p.length;
+    int sum=0;
+    int result=0;
+    int num = 1;
+       for(int j=0;j<len;j++)
+       {
+    	    num = num+p[j];
+    	    if(num<0)
+    	    {
+    	    	break;
+    	    }
+    	    if(num>0)
+    	    {
+    	    	continue;
+    	    }
+       }
+    return result;
+    }
+}

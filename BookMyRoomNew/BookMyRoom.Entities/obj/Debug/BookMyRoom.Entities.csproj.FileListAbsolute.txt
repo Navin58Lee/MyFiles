@@ -1,0 +1,12 @@
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\bin\Debug\BookMyRoom.Entities.dll.config
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\bin\Debug\BookMyRoom.Entities.dll
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\bin\Debug\BookMyRoom.Entities.pdb
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\bin\Debug\EntityFramework.dll
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\bin\Debug\EntityFramework.xml
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\obj\Debug\BookMyRoom.Entities.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\obj\Debug\BookMyRoom.Entities.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\obj\Debug\BookMyRoom.Entities.csproj.CopyComplete
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\obj\Debug\BookMyRoom.Entities.dll
+C:\Users\M1047256\source\repos\BookMyRoomNew\BookMyRoom.Entities\obj\Debug\BookMyRoom.Entities.pdb

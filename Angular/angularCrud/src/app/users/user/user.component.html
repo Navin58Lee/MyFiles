@@ -1,0 +1,72 @@
+<form class="user-form" #userForm="ngForm" (ngSubmit)="OnSubmit(userForm)">
+    <input type="hidden" name="User_Id" #UserId="ngModel" [(ngModel)]="userService.selectedUser.User_Id">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <input class="form-control" name="Firstname" #Firstname="ngModel" [(ngModel)]="userService.selectedUser.Firstname" placeholder="First Name"
+                required>
+            <div class="validationerror" *ngIf="Firstname.invalid && Firstname.touched"> This field is required</div>
+        </div>
+        <div class="form-group col-md-6">
+            <input class="form-control" name="Lastname" #Lastname="ngModel" [(ngModel)]="userService.selectedUser.Lastname" placeholder="Last Name"
+                required>
+            <div class="validationerror" *ngIf="Lastname.invalid && Lastname.touched"> This field is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <input class="form-control" name="Password" #Password="ngModel" [(ngModel)]="userService.selectedUser.Password" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <input class="form-control" name="Gender" #Gender="ngModel" [(ngModel)]="userService.selectedUser.Gender" placeholder="Gender">
+    </div>
+    <div class="form-group">
+        <input class="form-control" name="Email" #Email="ngModel" [(ngModel)]="userService.selectedUser.Email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <input class="form-control" name="Mobile" #Mobile="ngModel" [(ngModel)]="userService.selectedUser.Mobile" placeholder="Mobile">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-8">
+            <button [disabled]="!userForm.valid" type="submit" class="btn btn-lg btn-block btn-info">Submit</button>
+        </div>
+        <div class="form-group col-md-4">
+            <button type="button" class="btn btn-lg btn-block btn-secondary" (click)="resetForm(userForm)">Reset</button>
+        </div>
+    </div>
+</form>
+<!-- <div class="form-row">
+    <div class="form-group col-md-4">
+        <input type="text" [(ngModel)]="text" id="search" placeholder="Search to type">
+        <ul>
+            <div *ngFor="let n of userService.userList | filter: text">
+                <input type="checkbox" (click)="clickCheckbox(n.User_Id)">{{n.Firstname}}
+            </div>
+        </ul>
+    </div>&nbsp; Email:&nbsp;
+    <div class="form-group col-md-4">
+        <div>
+            <select name="drop" >
+            <option value="Normal Non AC" *ngFor="let n of userService.userList">{{n.Email}}</option>
+        </select>
+        </div> -->
+        <!-- <option value="Normal AC">Normal AC</option>
+          <option value="Deluxe Non AC">Deluxe Non AC</option>
+          <option value="Deluxe AC">Deluxe AC</option> -->
+    <!-- </div>
+</div> -->
+<!-- <div>
+    {{userService.selectedUser}}
+</div> -->
+<table class="table table-sm table-hover">
+        <tr>
+          <td>
+             {{userService.selectedUser.Firstname}}
+          </td>
+          <td>
+            {{userService.selectedUser.Lastname}}
+          </td>
+          <td>
+              {{userService.selectedUser.Email}}
+          </td>
+        </tr>
+    </table>
+    

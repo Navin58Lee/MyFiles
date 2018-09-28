@@ -1,0 +1,11 @@
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\bin\Debug\netcoreapp2.0\MediumThree.deps.json
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\bin\Debug\netcoreapp2.0\MediumThree.runtimeconfig.json
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\bin\Debug\netcoreapp2.0\MediumThree.runtimeconfig.dev.json
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\bin\Debug\netcoreapp2.0\MediumThree.dll
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\bin\Debug\netcoreapp2.0\MediumThree.pdb
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\obj\Debug\netcoreapp2.0\MediumThree.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\obj\Debug\netcoreapp2.0\MediumThree.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\obj\Debug\netcoreapp2.0\MediumThree.AssemblyInfoInputs.cache
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\obj\Debug\netcoreapp2.0\MediumThree.AssemblyInfo.cs
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\obj\Debug\netcoreapp2.0\MediumThree.dll
+C:\Users\M1047256\source\repos\MediumThree\MediumThree\obj\Debug\netcoreapp2.0\MediumThree.pdb

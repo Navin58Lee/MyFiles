@@ -1,0 +1,22 @@
+package FindTheFirstRepeatedWordInASentence;
+
+public class Solution {
+	static String firstRepeatedWord(String s)
+	{
+		String [] words = s.split(s);
+		int len = words.length;
+		String r = "";
+		for(int i=0;i<len;i++)
+		{
+			for(int j=i+1;j<len;j++)
+			{
+				if(words[i].equals(words[j]))
+				{
+					r = words[i];
+				}
+			}
+		}
+		return r;
+	}
+
+}

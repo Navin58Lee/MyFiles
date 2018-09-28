@@ -1,0 +1,19 @@
+<form name="eventform" #eventForm="ngForm" (ngSubmit)="onSubmit(eventForm)">
+  <label>Event:</label><select name="eventName" #eventName="ngModel"  [(ngModel)]="eventsObj.eventName" (change)="function()">
+    <option *ngFor="let event of eventList"  [value]="event">{{event}}</option>
+  </select>
+  <br>
+  <br><br><br>
+  <div *ngIf="enableButton==true">
+  <label>Name:</label><input type="text" name="participantName" #participantName="ngModel" [(ngModel)]="eventsObj.participantName" required>
+  <br><br><br>
+  <button type="submit" [disabled]="!eventForm.valid" value="Submit">Submit</button>
+  <br><br><br>
+  </div>
+  <button type="button" value="Show" (click)="Show()">Show</button>
+</form>
+<div *ngFor="let x of displayList">
+  {{x.eventName}} &nbsp;
+  {{x.participantName}}
+  <br>
+</div>

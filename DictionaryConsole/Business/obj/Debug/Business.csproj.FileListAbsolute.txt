@@ -1,0 +1,13 @@
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\bin\Debug\Business.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\bin\Debug\Business.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\bin\Debug\Database.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\bin\Debug\Presentation.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\bin\Debug\StudentEntity.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\bin\Debug\Database.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\bin\Debug\Presentation.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\bin\Debug\StudentEntity.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\obj\Debug\Business.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\obj\Debug\Business.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\Business\obj\Debug\Business.pdb

@@ -1,0 +1,29 @@
+import java.util.*;
+public class MeanderingArray {
+
+	public static void main(String[] args) {
+	 Scanner in = new Scanner(System.in);
+	 int n = in.nextInt();
+	 int [] num = new int[n];
+	 for(int i=0;i<n;i++)
+	 {
+		 num[i] = in.nextInt();
+	 }
+	 int [] res = new int[n];
+	 Arrays.sort(num);
+	 for(int i=0;i<n/2;i++)
+	 {
+		 for(int j=n-1;j>n/2;j--)
+		 {
+			 res[i] = num[j];
+			 res[i+1] = num[i];
+		 }
+	 }
+	 for(int i=0;i<n;i++)
+	 {
+		 System.out.print(res[i]+" ");
+	 }
+
+	}
+
+}

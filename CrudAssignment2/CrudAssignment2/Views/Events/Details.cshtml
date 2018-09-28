@@ -1,0 +1,10 @@
+﻿@model CrudAssignment2.Models.EventsModel
+@{ 
+    List<EventsModel> Event = List < EventsModel > TempData["Events"];
+ }
+<h2>Details</h2>
+@foreach (var c in Event.Values)
+{
+@c.id
+@c.name
+}

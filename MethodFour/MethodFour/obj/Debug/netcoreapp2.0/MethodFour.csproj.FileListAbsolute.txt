@@ -1,0 +1,11 @@
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\bin\Debug\netcoreapp2.0\MethodFour.deps.json
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\bin\Debug\netcoreapp2.0\MethodFour.runtimeconfig.json
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\bin\Debug\netcoreapp2.0\MethodFour.runtimeconfig.dev.json
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\bin\Debug\netcoreapp2.0\MethodFour.dll
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\bin\Debug\netcoreapp2.0\MethodFour.pdb
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\obj\Debug\netcoreapp2.0\MethodFour.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\obj\Debug\netcoreapp2.0\MethodFour.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\obj\Debug\netcoreapp2.0\MethodFour.AssemblyInfoInputs.cache
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\obj\Debug\netcoreapp2.0\MethodFour.AssemblyInfo.cs
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\obj\Debug\netcoreapp2.0\MethodFour.dll
+C:\Users\M1047256\source\repos\MethodFour\MethodFour\obj\Debug\netcoreapp2.0\MethodFour.pdb

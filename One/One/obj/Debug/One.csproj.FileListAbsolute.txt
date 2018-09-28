@@ -1,0 +1,6 @@
+C:\Users\M1047256\source\repos\One\One\obj\Debug\One.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\One\One\obj\Debug\One.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\One\One\bin\Debug\One.exe
+C:\Users\M1047256\source\repos\One\One\bin\Debug\One.pdb
+C:\Users\M1047256\source\repos\One\One\obj\Debug\One.exe
+C:\Users\M1047256\source\repos\One\One\obj\Debug\One.pdb

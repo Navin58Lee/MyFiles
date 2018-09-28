@@ -1,0 +1,14 @@
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\obj\Debug\DictionaryConsole.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\obj\Debug\DictionaryConsole.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\DictionaryConsole.exe.config
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\DictionaryConsole.exe
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\DictionaryConsole.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\Business.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\StudentEntity.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\Presentation.dll
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\Business.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\StudentEntity.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\bin\Debug\Presentation.pdb
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\obj\Debug\DictionaryConsole.csproj.CopyComplete
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\obj\Debug\DictionaryConsole.exe
+C:\Users\M1047256\source\repos\DictionaryConsole\DictionaryConsole\obj\Debug\DictionaryConsole.pdb

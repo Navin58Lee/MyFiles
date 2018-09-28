@@ -1,0 +1,36 @@
+package bin;
+import java.util.*;
+class Students
+{
+	private String name;
+	private int age;
+public Students(String nam)
+{
+	this.name = nam;
+}
+public String getName()
+{
+	return name;
+}
+public void setName(String name)
+{
+    this.name = name;
+}
+}
+public class SortingArrayOfObjects {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		Students s [] = new Students[n];
+		for(int i=0;i<n;i++)
+		{
+		System.out.println("Enter the name");
+		String name = in.next();
+		s[i]=new Students(name);
+		}
+		for(int i=0;i<n;i++)
+		{
+		
+		}
+	}
+}

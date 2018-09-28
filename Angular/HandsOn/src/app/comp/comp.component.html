@@ -1,0 +1,8 @@
+Name :<input type ="text" #textbox1><br><br>
+Track : <input type="text" #textbox2><br><br>
+Room : <input type="text" #textbox3><br><br>
+<button (click) = "onClick(textbox1.value,textbox2.value,textbox3.value)">Hit</button>
+<br><br>
+<app-child [a]="name"></app-child>
+<app-child [b]="track"></app-child>
+<app-child [c]="room"></app-child>

@@ -1,0 +1,11 @@
+C:\Users\M1047256\source\repos\Collections2\Collections2\obj\Debug\netcoreapp2.0\Collections2.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\Collections2\Collections2\obj\Debug\netcoreapp2.0\Collections2.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\Collections2\Collections2\obj\Debug\netcoreapp2.0\Collections2.AssemblyInfoInputs.cache
+C:\Users\M1047256\source\repos\Collections2\Collections2\obj\Debug\netcoreapp2.0\Collections2.AssemblyInfo.cs
+C:\Users\M1047256\source\repos\Collections2\Collections2\bin\Debug\netcoreapp2.0\Collections2.deps.json
+C:\Users\M1047256\source\repos\Collections2\Collections2\bin\Debug\netcoreapp2.0\Collections2.runtimeconfig.json
+C:\Users\M1047256\source\repos\Collections2\Collections2\bin\Debug\netcoreapp2.0\Collections2.runtimeconfig.dev.json
+C:\Users\M1047256\source\repos\Collections2\Collections2\bin\Debug\netcoreapp2.0\Collections2.dll
+C:\Users\M1047256\source\repos\Collections2\Collections2\bin\Debug\netcoreapp2.0\Collections2.pdb
+C:\Users\M1047256\source\repos\Collections2\Collections2\obj\Debug\netcoreapp2.0\Collections2.dll
+C:\Users\M1047256\source\repos\Collections2\Collections2\obj\Debug\netcoreapp2.0\Collections2.pdb

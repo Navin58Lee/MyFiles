@@ -1,0 +1,7 @@
+C:\Users\M1047256\source\repos\Aysnc\Aysnc\obj\Debug\Aysnc.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\Aysnc\Aysnc\obj\Debug\Aysnc.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\Aysnc\Aysnc\bin\Debug\Aysnc.exe.config
+C:\Users\M1047256\source\repos\Aysnc\Aysnc\bin\Debug\Aysnc.exe
+C:\Users\M1047256\source\repos\Aysnc\Aysnc\bin\Debug\Aysnc.pdb
+C:\Users\M1047256\source\repos\Aysnc\Aysnc\obj\Debug\Aysnc.exe
+C:\Users\M1047256\source\repos\Aysnc\Aysnc\obj\Debug\Aysnc.pdb

@@ -1,0 +1,29 @@
+<table class="table table-sm table-hover">
+  <tr *ngFor="let user of userService.userList">
+    <td>
+      {{user.Firstname}}-{{user.Lastname}}
+    </td>
+    <td>
+      {{user.Email}}
+    </td>
+    <td>
+      <input type="Submit" (click)="showForEdit(user)" name="Edit" value="Edit">
+    </td>
+    <td>
+      <input type="button" (click)="onDelete(user.User_Id)" name="Delete" value="Delete">
+    </td>
+  </tr>
+</table>
+<!-- <p>
+  Hello there!
+</p> -->
+<div class="form-row" style="text-align: center">
+  <div class="form-group">
+    Check-In: &nbsp; <input type="date" id="checkin" name="checkin" [(ngModel)]="checkin" class="form-control">
+  </div>
+</div>
+<div class="form-row" style="text-align: center">
+    <div class="form-group">
+      Check-Out: &nbsp; <input type="date" id="checkout" name="checkout" [(ngModel)]="checkout" class="form-control">
+    </div>
+  </div>

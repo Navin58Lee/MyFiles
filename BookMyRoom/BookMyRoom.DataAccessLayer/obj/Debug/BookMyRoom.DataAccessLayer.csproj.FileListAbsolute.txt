@@ -1,0 +1,16 @@
+c:\users\m1047256\source\repos\ProjectThreeTier\BookMyRoom.DataAccessLayer\obj\Debug\BookMyRoom.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\BookMyRoom.DataAccessLayer.dll.config
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\BookMyRoom.DataAccessLayer.dll
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\BookMyRoom.DataAccessLayer.pdb
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\BookMyRoom.Entities.dll
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\BookMyRoom.Entities.pdb
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\BookMyRoom.Entities.dll.config
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\obj\Debug\BookMyRoom.DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\obj\Debug\BookMyRoom.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\obj\Debug\BookMyRoom.DataAccessLayer.csproj.CopyComplete
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\obj\Debug\BookMyRoom.DataAccessLayer.dll
+C:\Users\M1047256\source\repos\BookMyRoom\BookMyRoom.DataAccessLayer\obj\Debug\BookMyRoom.DataAccessLayer.pdb

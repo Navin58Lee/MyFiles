@@ -1,0 +1,3 @@
+c:\users\m1047256\source\repos\UserRegistration\UserRegistration\obj\Debug\UserRegistration.Migrations.Users.resources
+c:\users\m1047256\source\repos\UserRegistration\UserRegistration\obj\Debug\UserRegistration.csproj.GenerateResource.cache
+c:\users\m1047256\source\repos\UserRegistration\UserRegistration\obj\Debug\UserRegistration.csproj.CoreCompileInputs.cache

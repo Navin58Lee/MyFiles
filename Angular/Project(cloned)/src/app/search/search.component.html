@@ -1,0 +1,170 @@
+<div id="main_container">
+  <!--=========================Start of Top Navbar===============================-->
+  <div class="head">
+      <nav class="navbar navbar-expand-lg fixed-top  navbar-light bg " id="Mynavbar">
+          <a id="bottom-nav" class="navbar-brand"><i class="fas fa-luggage-cart"></i>BookMyRoom</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">  
+              <li class="nav-item active">
+                <a id="bottom-nav" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li> 
+              
+          
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                  <button id="bottom-nav" class="btn btn-outline-dark my-2 my-sm-0" type="button" ><i class="far fa-user"></i>  Logout</button>     
+            
+            </form>
+          </div>
+        </nav>
+  </div>
+
+   <!--=========================End of Top Navbar===============================-->
+   <br>
+   <br>
+    <div id="searchf">
+
+      <div id="amenities">
+        <div class="row">
+          <div class="col-md-6 mb-2">
+            <h6>Features in BookMyRoom</h6>
+          </div>
+
+
+
+          <div class="col-md-6 mb-2 " id="amen">
+              <i class="fas fa-asterisk"></i>
+              <i style="  padding-left: 70px;"class="fas fa-wifi"></i>
+              <i style="  padding-left: 60px;"class="fas fa-tv"></i>
+              <i style="  padding-left: 55px;"class="fas fa-bed"></i>
+              <i style="  padding-left: 60px;"class="fas fa-shower"></i>
+              <i style="  padding-left: 80px;"class="fas fa-broom"></i>
+          </div>
+        </div>
+        <div class="row" >
+            <div class="col-md-6 mb-2"></div>
+            <div class="col-md-6 mb-2" id="text-icons">
+              <label><b>AC Rooms</b></label>
+              <label style="padding-left:40px;"><b>Wi-Fi</b></label>
+              <label style="padding-left:60px;"><b>TV</b></label>
+              <label style="padding-left:60px;"><b>Bed</b></label>
+              <label style="padding-left:35px;"><b>Clean Washrooms</b></label>
+              <label style="padding-left:25px;"><b>Hygenic</b></label>
+             
+            </div>
+        </div>
+      </div>
+    <form #form="ngForm">
+        <div class="form-row">
+
+          <div class="col-md-3 mb-4">
+            <label ><b>Location</b></label>
+            <select class="custom-select" name=hotelCity #hotelCity="ngModel" [(ngModel)]="str.hotelCity">
+                <option id="drop" value="Bhubaneswar">Bhubaneswar</option>
+                <option id="drop" value="Mumbai">Mumbai</option>
+                <option id="drop" value="Delhi">Delhi</option>
+                <option id="drop" value="Bangalore">Bangalore</option>
+                <option id="drop" value="Chennai">Chennai</option>
+                <option id="drop"value="Kolkata">Kolkata</option>
+              </select>
+          </div>
+
+          <div class="col-md-3 mb-4">
+              <div class="col-10">
+                  <label><b>Check-In</b></label>
+                <input class="form-control"id="hotelFromDate" #CheckIn="ngModel" [(ngModel)]="str.hotelFromDate" name="hotelFromDate" type="date">
+              </div>
+           </div>
+
+           <div class="col-md-3 mb-4">
+              <div class="col-10">
+                  <label><b>Check-Out</b></label>
+                <input class="form-control"  id="hotelToDate" #hotelToDate="ngModel" [(ngModel)]="str.hotelToDate" name="hotelToDate" type="date">
+              </div>
+           </div>
+
+           <div class="col-md-3 mb-4">
+              <label ><b>Room Preference</b></label>
+              <select class="custom-select" name="hotelRoomType" #hotelRoomType="ngModel" [(ngModel)]="str.hotelRoomType">
+                  <option id="drop" value="Single"><strong>Single-AC</strong></option>
+                  <option  id="drop" value="Single-NonAC">Single-NonAC</option>
+                  <option  id="drop" value="Deluxe-AC">Deluxe-AC</option>
+                  <option  id="drop" value="Deluxe-NonAC">Deluxe-NonAC</option>
+                </select>
+            </div>
+       
+        </div>
+        
+       
+        <button class="btn btn-warning" type="button"name="Search" (click)=show(form)><b>Find Hotels!</b></button>
+      </form>
+  </div>
+
+ 
+<!--=========================Start of Bottom Navbar===============================-->
+<div style="margin-top:100px;" > 
+    <nav class="navbar navbar-expand-lg  navbar-light" id ="bot-nav">
+       
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+           <li class="nav-item active">
+             <a  id="bottom-nav" class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+           </li>
+           <li class="nav-item">
+             <a  id="bottom-nav" class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+           </li>
+           <li class="nav-item">
+               <a id="bottom-nav" class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+             </li>
+             
+         </ul>
+         <ul class="navbar-nav mr-auto mt-3 mt-lg-0">
+             
+         &#169; 2018BookMyRoom 
+         </ul>
+        
+         <form class="form-inline my-2 my-lg-0">
+        
+           <button  id="bottom-nav" class="btn btn-outline-dark my-2 my-sm-0" routerLink="/Home" type="submit">Go <i class="far fa-hand-point-up"></i></button>
+         </form>
+       </div>
+     </nav>
+   
+   </div>
+   
+
+
+
+<!--=========================End of Bottom Navbar===============================-->
+
+
+<table  *ngFor="let data of searchData">
+  <thead>
+    <tr>
+      
+    </tr>
+  </thead>
+ <tbody>
+   <tr>
+      <td>{{ data.hotelId }}</td>
+      <td>{{ data.hotelName}}</td>
+      <td>{{ data.hotelRoomType}}</td>
+     <td>{{ data.hotelFromDate}}</td>
+     <td> {{ data.hotelToDate }} </td>
+     <td> {{ data.hotelPrice }} </td>
+     <td> {{ data.hotelCity }} </td>
+     <td>{{data.hotelRating}}</td>
+     <td>{{data.hotelUrl}}</td>
+   </tr>
+  </tbody>
+</table>
+
+<app-card [hotelInfo]="searchData"></app-card>

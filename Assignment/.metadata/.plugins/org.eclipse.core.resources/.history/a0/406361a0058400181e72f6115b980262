@@ -1,0 +1,14 @@
+package bin;
+import java.util.*;
+public class TwoDStringArray {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+	    String [][] arr = new String[2][];
+	    
+	    
+
+
+	}
+
+}

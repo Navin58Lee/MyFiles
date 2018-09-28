@@ -1,0 +1,22 @@
+package SuperPower;
+public class Solution {
+	static int superPower(int z)
+	{
+		int result = 0;
+		for(int p=1;p<10;p++)
+		{
+			for(int q=1;q<10;q++)
+			{
+				if(Math.pow(p, q)==z)
+				{
+					result = 1;
+				}
+				else
+				{
+					result = 0;
+				}
+			}
+		}
+		return result;
+	}
+}

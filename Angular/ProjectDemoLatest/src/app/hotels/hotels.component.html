@@ -1,0 +1,42 @@
+<div class="form-row">
+  <div class="form-group col-md-2">
+      <h6 style="color: orange">Room Type</h6>
+          <select name="a" class="x" #roomtype="ngModel" [(ngModel)]="hotel.Room_Type">
+              <option selected value="Single AC">Single AC</option>
+              <option value="Single Non AC">Single Non AC</option>
+              <option value="Deluxe AC">Deluxe AC</option>
+              <option value="Deluxe Non AC">Deluxe Non AC</option>
+          </select>
+  </div>
+  <div class="form-group col-md-2">
+      <h6 style="color: orange">City</h6>
+      <select name="b" class="y" #city="ngModel" [(ngModel)]="hotel.City_Name">
+              <option value="Chennai">Chennai</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+          </select>
+  </div>
+  <div class="form-group col-md-2">
+      <label for="Check_In" style="color: orange" >Check_In</label><br>
+      <input id="checkin" class="checkin" name="checkin" #checkin="ngModel" [(ngModel)]="hotel.CheckIn_Date" type="date">
+  </div>
+  
+  <div class="form-group col-md-2">
+      <label for="Check_Out" style="color: orange" >Check_Out</label><br>
+      <input id="checkout" class="checkout" name="checkout" #checkin="ngModel" [(ngModel)]="hotel.CheckOut_Date" type="date">
+  </div>
+  </div>  
+  <div class="form-group col-md-6">
+  <button type="button" class="btn btn-secondary" name="submit" (click)="show()">Go!</button>
+  </div>
+  <table>
+      <body>
+          <tr *ngFor="let data of searchData">
+              <b>Hotel:</b><br><td>{{data.Hot_Name}}</td>
+              <b>City:</b><br><td>{{data.City_Name}}</td>
+              <b>Address:</b><br><td>{{data.Hot_Add}}</td>
+              <b>RoomType:</b><br><td>{{data.Room_Type}}</td>
+          </tr>
+        </body>
+  </table>

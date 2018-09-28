@@ -1,0 +1,14 @@
+<p>
+  booking works!
+</p>
+<div class="form-group col-md-6">
+  <button type="button" class="btn btn-secondary" name="submit" (click)="history()">Booking History</button>
+  </div>
+  <table>
+      <body>
+          <tr *ngFor="let data of bookingData">
+              <b>Hotel:</b><br><td>{{data.Hot_Name}}</td>
+              <b>City:</b><br><td>{{data.City_Name}}</td>
+          </tr>
+        </body>
+  </table>

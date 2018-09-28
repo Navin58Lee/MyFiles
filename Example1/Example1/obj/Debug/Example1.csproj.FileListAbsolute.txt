@@ -1,0 +1,7 @@
+C:\Users\M1047256\source\repos\Example1\Example1\bin\Example1.dll.config
+C:\Users\M1047256\source\repos\Example1\Example1\bin\Example1.dll
+C:\Users\M1047256\source\repos\Example1\Example1\bin\Example1.pdb
+C:\Users\M1047256\source\repos\Example1\Example1\obj\Debug\Example1.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\Example1\Example1\obj\Debug\Example1.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\Example1\Example1\obj\Debug\Example1.dll
+C:\Users\M1047256\source\repos\Example1\Example1\obj\Debug\Example1.pdb

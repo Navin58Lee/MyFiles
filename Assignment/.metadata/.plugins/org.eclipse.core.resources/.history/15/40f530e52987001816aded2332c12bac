@@ -1,0 +1,10 @@
+package bin;
+import java.util.*;
+public class ExceptionHandlingNew {
+	public static void main(String[] args) 
+	{
+	
+
+	}
+
+}

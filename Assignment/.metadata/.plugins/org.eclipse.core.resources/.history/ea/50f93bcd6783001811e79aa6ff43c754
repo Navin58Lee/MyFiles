@@ -1,0 +1,10 @@
+package PlusMultArray;
+
+public class Solution {
+	static String plusMult(int [] A)
+	{
+		int len = A.length;
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsDropdown", "EventsDropdown\EventsDropdown.csproj", "{54EF072E-D53A-4E6C-9AA3-77A49B3A7B86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54EF072E-D53A-4E6C-9AA3-77A49B3A7B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EF072E-D53A-4E6C-9AA3-77A49B3A7B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EF072E-D53A-4E6C-9AA3-77A49B3A7B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EF072E-D53A-4E6C-9AA3-77A49B3A7B86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF73CD25-5CAD-42E3-B7D4-A74E3AE84181}
+	EndGlobalSection
+EndGlobal

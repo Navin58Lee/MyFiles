@@ -1,0 +1,405 @@
+<div class="content">
+  <div class="container">
+    <div class="search box">
+
+
+      <form [formGroup]="bookingForm">
+        <mat-form-field>
+          <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="fromDatePicker" placeholder="From Date"  formControlName="fromdate" ng-model = "myDate" required>
+          <mat-datepicker-toggle matSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
+          <mat-datepicker #fromDatePicker disabled="false"></mat-datepicker>
+        </mat-form-field>
+        &nbsp; &nbsp;
+
+        <mat-form-field>
+          <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="toDatePicker" placeholder="To date" formControlName="todate" required>
+          <mat-datepicker-toggle matSuffix [for]="toDatePicker"></mat-datepicker-toggle>
+          <mat-datepicker #toDatePicker disabled="false"></mat-datepicker>
+        </mat-form-field>
+
+        &nbsp; &nbsp;
+
+        <mat-form-field>
+          <mat-select placeholder="Locations" formControlName="location">
+            <mat-option>-- Select any Location --</mat-option>
+            <mat-optgroup *ngFor="let group of locationGroups" [label]="group.name">
+              <mat-option *ngFor="let location of group.location" [value]="location.value">
+                {{ location.viewValue }}
+              </mat-option>
+            </mat-optgroup>
+          </mat-select>
+        </mat-form-field>
+
+        &nbsp; &nbsp;
+
+        <button mat-raised-button color="primary" class="btn btn-success" (click)="searchBooking(bookingForm)">
+          <span class="glyphicon glyphicon-search"></span>
+          <b>Search</b>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div *ngIf="isSearchButtonClicked">
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--ForIfElse-->
+
+    <div *ngFor="let typeOfRoom of result.Result">
+      <ng-container [ngSwitch]="typeOfRoom.RoomType">
+
+        <!-- meeting room -->
+        <div *ngSwitchCase="'Meeting'">
+          <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title>
+                <p style="font-size:20px">
+                  <b>Meeting Room</b>
+                </p>
+              </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="./assets/images/meeting.jpg" alt="" class="image">
+            <mat-card-content>
+              <div class="description">
+                Find convenient, professional space to meet wherever you need. Near the station, near your client, somewhere central for
+                regional staff all available on-demand and by the hour.
+                <br>
+                <br>Available Rooms: {{result.Result[0].NoOfAvailableRooms}}
+                <p style="float:right;">
+                  <button mat-raised-button color="warn"  (click)="setbookingDetails(result.Result[0].NoOfAvailableRooms,result.Result[0].RoomPrice,bookingForm.value.todate,bookingForm.value.fromdate,result.Result[0].RoomType,result.Result[0].AssetId)">Book</button>
+                </p>
+              </div>
+            </mat-card-content>
+          </mat-card>
+          <br>
+          <br>
+          <br>
+        </div>
+        <!-- meeting room -->
+
+        <!-- auditorium room -->
+        <div *ngSwitchCase="'Auditorium'">
+          <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title>
+                <p style="font-size: 20px">
+                  <b>Auditorium</b>
+                </p>
+              </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="./assets/images/auditorium.jpg" alt="" class="image">
+            <mat-card-content>
+              <div class="description">
+                Sanctuary provides excellent ambience for national and international level conferences and seminars Its Central Convention
+                Centre Complex houses a world-class Auditorium, all available on-demand and by the hour.
+                <br>
+                <br>Available Rooms: {{result.Result[2].NoOfAvailableRooms}}
+                <p style="float:right;">
+                  <button mat-raised-button color="warn"  (click)="setbookingDetails(result.Result[2].NoOfAvailableRooms,result.Result[2].RoomPrice,bookingForm.value.todate,bookingForm.value.fromdate,result.Result[2].RoomType)">Book</button>
+                </p>
+              </div>
+            </mat-card-content>
+          </mat-card>
+          <br>
+          <br>
+          <br>
+        </div>
+        <!-- auditorium room -->
+
+        <!-- conference room -->
+        <div *ngSwitchCase="'Conference'">
+          <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title>
+                <p style="font-size: 20px">
+                  <b>Conference Room</b>
+                </p>
+              </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="./assets/images/conference.jpg" alt="" class="image">
+            <mat-card-content>
+              <div class="description">
+                Equipped with latest technologies including Wi-Fi, air-conditioning and audio-visual equipment, Sanctuary Conference Hall
+                is an ideal place to host medium-sized meetings and conferences.
+                <br>
+                <br>Available Rooms: {{result.Result[3].NoOfAvailableRooms}}
+                <p style="float:right;">
+                  <button mat-raised-button color="warn"  (click)="setbookingDetails(result.Result[3].NoOfAvailableRooms,result.Result[3].RoomPrice,bookingForm.value.todate,bookingForm.value.fromdate,result.Result[3].RoomType)">Book</button>
+                </p>
+              </div>
+            </mat-card-content>
+          </mat-card>
+          <br>
+          <br>
+          <br>
+        </div>
+        <!-- conference room -->
+
+        <!-- accomodation room -->
+        <div *ngSwitchCase="'Accomodation'">
+          <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title>
+                <p style="font-size: 20px">
+                  <b>Accommodation Room</b>
+                </p>
+              </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="./assets/images/Accommodation.jpg" alt="" class="image">
+            <mat-card-content>
+              <div class="description">
+                Sanctuary Maratha offers a range of accommodation options that rate among the best in hotel. The six storey hotel comprises
+                380 elegantly appointed and spacious guest-rooms that strike a perfect all available on-demand.
+                <br>
+                <br>Available Rooms: {{result.Result[1].NoOfAvailableRooms}}
+                <p style="float:right;">
+                  <button mat-raised-button color="warn"  (click)="setbookingDetails(result.Result[1].NoOfAvailableRooms,result.Result[1].RoomPrice,bookingForm.value.todate,bookingForm.value.fromdate,result.Result[1].RoomType)">Book</button>
+                </p>
+              </div>
+            </mat-card-content>
+          </mat-card>
+          <br>
+          <br>
+          <br>
+        </div>
+        <!-- accomodation room -->
+
+        <!-- amphitheater -->
+        <div *ngSwitchCase="'Amphitheater'">
+          <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title>
+                <p style="font-size: 20px">
+                  <b>Amphitheatre</b>
+                </p>
+              </mat-card-title>
+            </mat-card-header>
+
+            <img mat-card-image src="./assets/images/amphitheatre.jpg" alt="" class="image">
+            <mat-card-content>
+              <div class="description">
+                Find convenient, professional space to meet wherever you need. Near the station, near your client, somewhere central for
+                regional staff all available on-demand and by the hour.
+                <br>
+                <br> Available
+                <p style="float:right;">
+                    <button mat-raised-button color="warn" (click)="setbookingDetails(result.Result[5].NoOfAvailableRooms,result.Result[5].RoomPrice,bookingForm.value.todate,bookingForm.value.fromdate,result.Result[5].RoomType)">Book</button> 
+                </p>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <!-- amphetheater -->
+      </ng-container>
+    </div>
+  </div>
+  <p style="text-align:center;font-size:25px;margin-top:20px;">
+    <b>
+      <u>Our Fine</u>st Facilities</b>
+  </p>
+  <div class="containermatcard">
+    <div class="row">
+      <div class="col-sm-6 left">
+        <mat-card class="card1">
+          <mat-card-header>
+            <mat-card-title>
+              <p style="font-size:13px">
+                <b>Meeting Room</b>
+              </p>
+            </mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="./assets/images/meeting.jpg" class="image1">
+        </mat-card>
+      </div>
+      <div class="col-sm-6 right">
+        <mat-card class="card1">
+          <mat-card-header>
+            <mat-card-title>
+              <p style="font-size: 13px">
+                <b>Auditorium</b>
+              </p>
+            </mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="./assets/images/auditorium.jpg" class="image1">
+        </mat-card>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 left">
+        <mat-card class="card1">
+          <mat-card-header>
+            <mat-card-title>
+              <p style="font-size: 13px">
+                <b>Conference Room</b>
+              </p>
+            </mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="./assets/images/conference.jpg" class="image1">
+        </mat-card>
+      </div>
+      <div class="col-sm-6 right">
+        <mat-card class="card1">
+          <mat-card-header>
+            <mat-card-title>
+              <p style="font-size: 13px">
+                <b>Accommodation Room</b>
+              </p>
+            </mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="./assets/images/Accommodation.jpg" class="image1">
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+<!--ngfor-->
+<!-- <mat-card class="card">
+  <div *ngIf="isSearchButtonClicked" style="text-align:center">
+    <br>
+    <br>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>
+          <p style="font-size:20px">
+            <b>Meeting Room</b>
+          </p>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="./assets/images/meeting.jpg" alt="" class="image">
+      <mat-card-content>
+        <div class="description">
+          Find convenient, professional space to meet wherever you need. Near the station, near your client, somewhere central for
+          regional staff all available on-demand and by the hour.
+          <br>
+          <br>Available Rooms: 10
+          <p style="float:right;">
+            <button mat-raised-button color="warn">Book</button>
+          </p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <br>
+    <br>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>
+          <p style="font-size: 20px">
+            <b>Conference Room</b>
+          </p>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="./assets/images/conference.jpg" alt="" class="image">
+      <mat-card-content>
+        <div class="description">
+          Equipped with latest technologies including Wi-Fi, air-conditioning and audio-visual equipment, Sanctuary Conference Hall
+          is an ideal place to host medium-sized meetings and conferences.
+          <br>
+          <br>Available Rooms: 2
+          <p style="float:right;">
+            <button mat-raised-button color="warn">Book</button>
+          </p>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+          <a href="/bookingdetails" ><button mat-raised-button color="warn">Book</button></a>
+
+      </mat-card-actions>
+    </mat-card>
+    <br>
+    <br>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>
+          <p style="font-size: 20px">
+            <b>Auditorium</b>
+          </p>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="./assets/images/auditorium.jpg" alt="" class="image">
+      <mat-card-content>
+        <div class="description">
+          Sanctuary provides excellent ambience for national and international level conferences and seminars Its Central Convention
+          Centre Complex houses a world-class Auditorium, all available on-demand and by the hour.
+          <br>
+          <br>Available Rooms: 5
+          <p style="float:right;">
+            <button mat-raised-button color="warn">Book</button>
+          </p>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+          <a href="/bookingdetails" ><button mat-raised-button color="warn">Book</button></a>
+
+      </mat-card-actions>
+    </mat-card>
+    <br>
+    <br>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>
+          <p style="font-size: 20px">
+            <b>Accommodation Room</b>
+          </p>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="./assets/images/Accommodation.jpg" alt="" class="image">
+      <mat-card-content>
+        <div class="description">
+          Sanctuary Maratha offers a range of accommodation options that rate among the best in hotel. The six storey hotel comprises
+          380 elegantly appointed and spacious guest-rooms that strike a perfect all available on-demand.
+          <br>
+          <br>Available Rooms: 8
+          <p style="float:right;">
+            <button mat-raised-button color="warn">Book</button>
+          </p>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+          <a href="/bookingdetails" ><button mat-raised-button color="warn">Book</button></a>
+
+      </mat-card-actions>
+    </mat-card>
+    <br>
+    <br>
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>
+          <p style="font-size: 20px">
+            <b>Amphitheatre</b>
+          </p>
+        </mat-card-title>
+      </mat-card-header>
+     
+      <img mat-card-image src="./assets/images/amphitheatre.jpg" alt="" class="image">
+      <mat-card-content>
+        <div class="description">
+          Find convenient, professional space to meet wherever you need. Near the station, near your client, somewhere central for
+          regional staff all available on-demand and by the hour.
+          <br>
+          <br>
+      Available
+          <p style="float:right;">
+            <button mat-raised-button color="warn">Book</button>
+          </p>
+        </div>  
+      </mat-card-content>
+      <mat-card-actions layout="row" layout-align="end center">
+          <a href="/bookingdetails" ><button mat-raised-button color="warn">Book</button></a>
+      </mat-card-actions>
+    </mat-card>
+  </div> -->
+
+
+<!-- <footer class="page-footer font-small blue pt-4 mt-4">
+
+  <div class="footer-copyright py-3 text-center" style="background-color:black;height:40px;color:aliceblue;font-size:20px">
+    © 2018 Copyright:Sanctuary
+  </div>
+
+</footer>
+</mat-card>
+</div>
+</div> -->

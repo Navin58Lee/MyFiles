@@ -1,0 +1,30 @@
+package bin;
+import java.util.*;
+public class TwoDStringArray {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String a = in.nextLine();
+		String b = in.nextLine();
+        String [][] arr = new String[2][];
+        
+        String aword[] = a.split(" ");
+        String bword[] = b.split(" ");
+        for(int i=0;i<aword.length;i++)
+        {
+        	arr[0][i] = aword[i];
+        }
+        for(int i=0;i<bword.length;i++)
+        {
+        	arr[1][i] = bword[i];
+        }
+        for(int i=0;i<2;i++)
+        {
+        	for(int j=0;j<arr[i].length;j++)
+        	{
+        		System.out.println(arr[i][j]);
+        	}
+        }
+  
+	}
+}

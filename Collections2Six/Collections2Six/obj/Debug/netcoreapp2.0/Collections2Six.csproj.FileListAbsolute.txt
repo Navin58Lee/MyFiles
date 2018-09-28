@@ -1,0 +1,11 @@
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\bin\Debug\netcoreapp2.0\Collections2Six.deps.json
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\bin\Debug\netcoreapp2.0\Collections2Six.runtimeconfig.json
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\bin\Debug\netcoreapp2.0\Collections2Six.runtimeconfig.dev.json
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\bin\Debug\netcoreapp2.0\Collections2Six.dll
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\bin\Debug\netcoreapp2.0\Collections2Six.pdb
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\obj\Debug\netcoreapp2.0\Collections2Six.csprojAssemblyReference.cache
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\obj\Debug\netcoreapp2.0\Collections2Six.csproj.CoreCompileInputs.cache
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\obj\Debug\netcoreapp2.0\Collections2Six.AssemblyInfoInputs.cache
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\obj\Debug\netcoreapp2.0\Collections2Six.AssemblyInfo.cs
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\obj\Debug\netcoreapp2.0\Collections2Six.dll
+C:\Users\M1047256\source\repos\Collections2Six\Collections2Six\obj\Debug\netcoreapp2.0\Collections2Six.pdb

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CampusMindTrackAllocation", "CampusMindTrackAllocation\CampusMindTrackAllocation.csproj", "{24BDAC93-00BD-40C3-9E46-026D323F7EA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24BDAC93-00BD-40C3-9E46-026D323F7EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24BDAC93-00BD-40C3-9E46-026D323F7EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24BDAC93-00BD-40C3-9E46-026D323F7EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24BDAC93-00BD-40C3-9E46-026D323F7EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3F45538-DAF8-4E6D-BFE6-1A52B098DA99}
+	EndGlobalSection
+EndGlobal
